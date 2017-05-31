@@ -150,6 +150,9 @@ strong {
 .color3 {
     background: #291670;
 }
+.section {
+	padding: 100px 0;
+}
 /*----- Helper Classes -----*/
 
 html * {
@@ -317,10 +320,6 @@ body {
     position: relative;
     z-index: 2;
     top: 100vh;
-}
-.what {
-    background: #000;
-    padding-top: 100px;
 }
 .hero {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 10%, transparent 15%), linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(214, 0, 112, 0.2), rgba(36, 14, 53, 0.2), rgba(36, 14, 53, 0.2), rgba(14, 10, 142, 0.2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../images/peers.jpg) no-repeat center top;
@@ -514,9 +513,13 @@ body {
     justify-content: center;
     background: linear-gradient(to bottom right, #D60070, #251FE7);
 }
-.purpose .box-inner .box-img img {
+.purposeTwo .box-inner .box-img img {
     width: 100%;
 }
+.key-features {
+	padding-top: 100px;
+}
+
 .purposeOne,
 .purposeThree {
     padding-top: 30px !important;
@@ -552,7 +555,7 @@ body {
     content: "\f3d3";
 }
 .roadmap-phase {
-    padding: 30px 75px 30px 20px;
+    padding: 30px 60px 30px 20px;
     border-left: 10px solid rgba(255, 255, 255, 0.1);
 }
 #faq .panel,
@@ -795,7 +798,6 @@ span.status.done {
 
 .contact {
     background: #fdfdfd;
-    padding: 100px 0;
 }
 .contact h2.tagline {
     color: #222;
@@ -841,7 +843,7 @@ span.status.done {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    line-height: 65px;
+    line-height: 70px;
     vertical-align: middle;
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
@@ -878,11 +880,10 @@ a.team-nav:before {
 .social li a i {
     font-size: 32px;
     font-weight: normal;
-    line-height: 2.3em;
+		vertical-align: middle;
 }
 #faq {
     background: #f1f1f1;
-    padding: 100px 0;
 }
 #faq h2 {
     font-family: 'Roboto';
@@ -999,7 +1000,6 @@ a.team-nav:before {
 
 .stories {
     background: #fcfcfc;
-    padding: 100px 0;
 }
 .stories-text i {
     color: #fff;
@@ -1752,10 +1752,19 @@ a.team-nav:before {
     .subscribe-form .mail {
         padding: 0 30px 0 20px;
         border-radius: 5px 0 0 5px;
+				width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-right: 3px solid #eee;
     }
     .subscribe-form .submit-button {
         padding: 0 5px 0 5px;
         border-radius: 0 5px 5px 0;
+				width: 100%;
+box-sizing: border-box;
+margin-top: 10px;
+border-radius: 5px;
+border: none;
     }
 }
 @media screen and (max-width: 399px) {
@@ -2016,9 +2025,8 @@ ul#countdown li p {
     background: #f3f3f3;
 }
 .purpose {
-    background: linear-gradient(to bottom, #000000, rgba(36, 14, 53, 0.95)), url(../images/brain.jpg) no-repeat top center;
+    background: linear-gradient(to bottom, #000000 30%, rgba(36, 14, 53, 0.97)), url(../images/brain.jpg) no-repeat top center;
     background-size: cover;
-    padding: 100px 0;
 }
 .vision h2 {
     font-size: 34px;
@@ -2143,11 +2151,47 @@ a.item {
     }
     .navbar-default .navbar-brand {
         color: #222222;
-        padding: 5px 5px !important;
+        padding: 12px !important;
     }
     .navbar-default .navbar-toggle .icon-bar {
         background-color: #666666;
     }
+		.purposeTwo {
+			margin-top: 30px;
+		}
+		h2.tagline {
+			font-size: 28px !important;
+		}
+		.stories-text li {
+			font-size: 20px !important;
+		}
+		.faq-item {
+			font-size: 18px !important;
+		}
+		.roadmap-phase h2 {
+			font-size: 24px !important;
+		}
+		.roadmap-phase:after {
+	    right: 20px;
+	    font-size: 34px;
+		}
+		.footer-sm .footer-inner p {
+			font-size: 14px !important;
+		}
+		.section {
+			padding: 70px 0;
+		}
+		.social li a {
+		    width: 55px;
+		    height: 55px;
+		    line-height: 55px;
+		}
+		.contact h2.tagline {
+			margin-bottom: 30px;
+		}
+		.form {
+			margin-top: 50px;
+		}
 }
 @media only screen and (min-width: 240px) {
     .navbar.past-main {
