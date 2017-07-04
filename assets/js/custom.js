@@ -189,9 +189,18 @@ jQuery(function($) {
         });
     }
 
+    $('#faqlist').on('show.bs.collapse', function (e) {
+      $('#faqlist .in').collapse('hide');
+    });
 
-$('#faqlist').on('show.bs.collapse', function () {
-    $('#faqlist .in').collapse('hide');
-});
+    $('#faqlist').on('shown.bs.collapse', function (e) {
+        var offset = $(this).find('.collapse.in').parent();
+        if(offset) {
+            $('html,body').animate({
+                scrollTop: $(offset).offset().top - 70
+            }, 500);
+        }
+    });
+
 
 });
