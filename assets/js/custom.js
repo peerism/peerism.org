@@ -92,7 +92,7 @@ jQuery(function($) {
     return false;
   });
 
-/* ------ Countdown ----- */
+/* ------ Countdown -----
 
   $('#countdown').countdown({
 		date: '12/07/2017 12:00:00',
@@ -102,7 +102,7 @@ jQuery(function($) {
 	 }, function () {
 		alert('Done!');
 	});
-
+*/
 /* ------ jQuery for Easing min -- */
 
   $('a.page-scroll').on('click', function(event) {
