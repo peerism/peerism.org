@@ -183,7 +183,7 @@ jQuery(function($) {
 
                 } else {
                     $resultElement.css("color", "green");
-                    $resultElement.html("You're in! Check your inbox to confirm");
+                    $resultElement.html("You're in! We'll let you know when it's ready :)");
                 }
             }
         });
